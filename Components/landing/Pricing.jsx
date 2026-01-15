@@ -113,8 +113,8 @@ function PricingCard({ plan, index }) {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
       <Card className={`relative h-full bg-gradient-to-br from-slate-800/90 to-slate-900/90 backdrop-blur-sm border transition-all duration-300 hover:border-slate-600 group ${plan.popular
-          ? 'border-purple-500/50 shadow-lg shadow-purple-500/20 lg:scale-105'
-          : 'border-slate-700/50'
+        ? 'border-purple-500/50 shadow-lg shadow-purple-500/20 lg:scale-105'
+        : 'border-slate-700/50'
         }`}>
         <CardHeader className="p-8 pb-6">
           <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${plan.color} flex items-center justify-center mb-4`}>
@@ -153,8 +153,8 @@ function PricingCard({ plan, index }) {
                 className={`flex items-start gap-3 ${!feature.included ? 'opacity-40' : ''}`}
               >
                 <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${feature.included
-                    ? 'bg-green-500/20 border border-green-500/30'
-                    : 'bg-slate-700/30 border border-slate-600/30'
+                  ? 'bg-green-500/20 border border-green-500/30'
+                  : 'bg-slate-700/30 border border-slate-600/30'
                   }`}>
                   {feature.included && <Check className="w-3 h-3 text-green-400" />}
                 </div>
@@ -169,8 +169,8 @@ function PricingCard({ plan, index }) {
         <CardFooter className="p-8 pt-0">
           <Button
             className={`w-full py-6 text-base rounded-xl transition-all duration-300 ${plan.popular
-                ? 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg shadow-purple-500/25'
-                : 'bg-slate-700 hover:bg-slate-600 text-white'
+              ? 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white shadow-lg shadow-purple-500/25'
+              : 'bg-slate-700 hover:bg-slate-600 text-white'
               }`}
             onClick={() => analytics.track({
               eventName: 'pricing_plan_selected',
@@ -188,7 +188,7 @@ function PricingCard({ plan, index }) {
 
 export default function Pricing() {
   return (
-    <section className="relative py-32 bg-slate-900 overflow-hidden">
+    <section id="pricing" className="relative py-32 bg-slate-900 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent" />

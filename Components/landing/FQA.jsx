@@ -154,7 +154,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="relative py-32 bg-slate-950 overflow-hidden">
+    <section id="faq" className="relative py-32 bg-slate-950 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent" />

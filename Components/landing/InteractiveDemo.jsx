@@ -251,7 +251,7 @@ export default function InteractiveDemo() {
   const currentStep = demoSteps[activeStep];
 
   return (
-    <section className="relative py-32 bg-slate-900 overflow-hidden">
+    <section id="demo" className="relative py-32 bg-slate-900 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
@@ -292,8 +292,8 @@ export default function InteractiveDemo() {
                 key={step.id}
                 onClick={() => handleStepChange(index)}
                 className={`w-full text-left p-6 rounded-2xl border transition-all duration-300 ${activeStep === index
-                    ? 'bg-slate-800 border-slate-600 shadow-lg'
-                    : 'bg-slate-800/30 border-slate-700/50 hover:bg-slate-800/50'
+                  ? 'bg-slate-800 border-slate-600 shadow-lg'
+                  : 'bg-slate-800/30 border-slate-700/50 hover:bg-slate-800/50'
                   }`}
               >
                 <div className="flex items-start gap-4">

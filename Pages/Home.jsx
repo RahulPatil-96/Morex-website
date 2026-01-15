@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../Components/landing/Navbar';
 import Hero from '../Components/landing/Hero';
 import FeatureSection from '../Components/landing/FeatureSection';
 import InteractiveDemo from '../Components/landing/InteractiveDemo';
@@ -11,6 +12,7 @@ import Footer from '../Components/landing/Footer';
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-950">
+      <Navbar />
       <Hero />
       <FeatureSection />
       <InteractiveDemo />

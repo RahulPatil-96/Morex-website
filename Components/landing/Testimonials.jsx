@@ -150,7 +150,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section className="relative py-32 bg-slate-950 overflow-hidden">
+    <section id="testimonials" className="relative py-32 bg-slate-950 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
@@ -208,8 +208,8 @@ export default function Testimonials() {
                   key={index}
                   onClick={() => handleDotClick(index)}
                   className={`transition-all duration-300 rounded-full ${index === currentIndex
-                      ? 'w-8 h-2 bg-gradient-to-r from-blue-500 to-cyan-500'
-                      : 'w-2 h-2 bg-slate-700 hover:bg-slate-600'
+                    ? 'w-8 h-2 bg-gradient-to-r from-blue-500 to-cyan-500'
+                    : 'w-2 h-2 bg-slate-700 hover:bg-slate-600'
                     }`}
                 />
               ))}

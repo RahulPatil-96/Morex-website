@@ -216,7 +216,7 @@ const features = [
 
 export default function FeatureSection() {
   return (
-    <section className="relative py-32 bg-slate-950">
+    <section id="features" className="relative py-32 bg-slate-950">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent" />
